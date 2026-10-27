@@ -10,7 +10,7 @@ export default function Map() {
     <div className={styles.mapContainer} onClick={()=>{navigate("form")}}>
       <h1>Map</h1>  
       <h1>Position : {lat},{lng}</h1>
-      <button onClick={()=>{
+      <button onClick={(e)=>{ e.preventDefault();
         setsearchParams({lat:23 , lng :50})
       }}> change position</button>
     </div>
